@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de cumparaturi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="list">
+        <h2>Listă de cumpărături <img src="images/lista-icon.png" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Adauga produsul" />
+          <button id="adaugare" onclick="AddProduct()">Adaugare</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Produs 1</li>
+          <li>Produs 2</li>
+          <li>Produs 3</li> -->
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <button id="message">Numără produsele</button>
+        <button id="sort">Sortează produsele</button>
+        <button id="averagePrice" onclick="calculateAverage()">
+          Calculează media prețurilor
+        </button>
+        <button id="sumPrice" onclick="calculateSum()">
+          Calculează suma prețurilor
+        </button>
+      </div>
+      <br />
+      <footer>
+        <p class="footer">
+          &copy;Ecaterina Ștefan &nbsp; <span class="year"></span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
